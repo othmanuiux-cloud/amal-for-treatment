@@ -124,7 +124,7 @@ export default function AdminVolunteers() {
 
   const volunteers = data?.data?.data || [];
   const meta = data?.data?.meta;
-// ✅ fixed
+
   const handleSelectAll = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
       setSelectedUsers(volunteers.map((u: any) => u.id));
