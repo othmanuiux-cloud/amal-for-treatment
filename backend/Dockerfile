@@ -55,5 +55,9 @@ RUN php artisan config:cache \
     && php artisan view:cache || true
 
 EXPOSE 80
-
+RUN php artisan config:clear || true
+RUN php artisan cache:clear || true
+RUN php artisan route:clear || true
+RUN php artisan view:clear || true
+RUN php artisan optimize:clear || true
 CMD ["apache2-foreground"]
