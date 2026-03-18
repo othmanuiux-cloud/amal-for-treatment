@@ -129,7 +129,7 @@ export default function AdminVolunteers() {
     if (e.target.checked) {
       setSelectedUsers(volunteers.map((u: any) => u.id));
     } else {
-https://amal-for-treatment.onrender.com      setSelectedUsers([]);
+      setSelectedUsers([]);
     }
   };
 
