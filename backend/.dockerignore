@@ -1,7 +1,11 @@
-.env
 .git
 .gitignore
 node_modules
-vendor
-storage/app
-storage/logs
+npm-debug.log
+.env.backup
+.env.production
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
