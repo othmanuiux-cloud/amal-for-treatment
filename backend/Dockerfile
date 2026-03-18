@@ -19,7 +19,16 @@ RUN docker-php-ext-configure pgsql -with-pgsql=/usr/include/php/20220802 \
 
 RUN a2enmod rewrite
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+RUN echo '<VirtualHost *:80>' > /etc/apache2/sites-available/000-default.conf && \
+    echo '    DocumentRoot /var/www/html/public' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    <Directory /var/www/html/public>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        Options -Indexes +FollowSymLinks' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        AllowOverride All' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '        Require all granted' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '    </Directory>' >> /etc/apache2/sites-available/000-default.conf && \
+    echo '</VirtualHost>' >> /etc/apache2/sites-available/000-default.conf
+
+COPY --from=composer:2.6 /usr/bin/composer /usr/bin/composer
 
 COPY composer.json composer.lock* ./
 
