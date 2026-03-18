@@ -1,0 +1,138 @@
+{
+  "common": {
+    "loading": "جاري التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "submit": "إرسال",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "search": "بحث",
+    "filter": "تصفية",
+    "no_results": "لا توجد نتائج",
+    "success": "تم بنجاح",
+    "error": "حدث خطأ",
+    "confirm": "تأكيد",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirm_password": "تأكيد كلمة المرور",
+    "forgot_password": "نسيت كلمة المرور؟",
+    "remember_me": "تذكرني",
+    "dont_have_account": "ليس لديك حساب؟",
+    "already_have_account": "لديك حساب بالفعل؟",
+    "name": "الاسم",
+    "phone": "رقم الهاتف",
+    "country": "الدولة",
+    "role": "الدور",
+    "login_title": "مرحباً بعودتك",
+    "register_title": "إنشاء حساب جديد"
+  },
+  "roles": {
+    "admin": "مدير",
+    "volunteer": "متطوع",
+    "patient": "مريض"
+  },
+  "case": {
+    "title": "الحالات الطبية",
+    "submit": "تقديم حالة",
+    "my_cases": "حالاتي",
+    "patient_name": "اسم المريض",
+    "patient_age": "عمر المريض",
+    "patient_gender": "جنس المريض",
+    "patient_file_number": "رقم الملف في المستشفى",
+    "disease": "اسم المرض",
+    "disease_category": "تصنيف المرض",
+    "hospital_name": "اسم المستشفى",
+    "hospital_country": "دولة المستشفى",
+    "hospital_address": "عنوان المستشفى",
+    "estimated_cost": "التكلفة التقديرية",
+    "description": "الوصف",
+    "status": "الحالة",
+    "priority": "الأولوية",
+    "documents": "المستندات",
+    "upload_document": "رفع مستند",
+    "consent": "أوافق على نشر بياناتي",
+    "consent_text": "أوافق على نشر حالتي الطبية على المنصة الإنسانية",
+    "statuses": {
+      "pending": "قيد الانتظار",
+      "verifying": "جاري التحقق",
+      "verified": "تم التحقق",
+      "approved": "معتمد",
+      "rejected": "مرفوض"
+    },
+    "priorities": {
+      "low": "منخفضة",
+      "medium": "متوسطة",
+      "high": "عالية",
+      "urgent": "عاجلة"
+    },
+    "genders": {
+      "male": "ذكر",
+      "female": "أنثى",
+      "other": "أخرى"
+    }
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "welcome": "مرحباً",
+    "statistics": "الإحصائيات",
+    "recent_cases": "الحالات الأخيرة",
+    "pending_cases": "حالات قيد الانتظار",
+    "verified_cases": "حالات تم التحقق منها",
+    "approved_cases": "حالات معتمدة"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عن المنصة",
+    "cases": "الحالات",
+    "contact": "اتصل بنا",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "dashboard": "لوحة المعلومات",
+    "my_cases": "حالاتي",
+    "volunteer_cases": "حالات المتطوعين",
+    "admin_dashboard": "إدارة النظام",
+    "users": "المستخدمون",
+    "volunteers": "المتطوعون"
+  },
+  "footer": {
+    "description": "منصة أمل للعلاج هي منصة إنسانية تساعد اليمنيين على الوصول للعلاج في الخارج",
+    "rights": "جميع الحقوق محفوظة"
+  },
+  "validation": {
+    "required": "هذا الحقل مطلوب",
+    "email_invalid": "البريد الإلكتروني غير صحيح",
+    "password_min": "كلمة المرور يجب أن تكون 8 أحرف على الأقل",
+    "password_match": "كلمات المرور غير متطابقة"
+  },
+  "admin": {
+    "title": "لوحة الإدارة",
+    "dashboard": "لوحة المعلومات",
+    "cases": "الحالات الطبية",
+    "users": "المستخدمون",
+    "volunteers": "المتطوعون",
+    "verifications": "التحققات",
+    "reports": "التقارير",
+    "activity": "سجل النشاطات",
+    "settings": "الإعدادات",
+    "total_cases": "إجمالي الحالات",
+    "pending_cases": "حالات قيد الانتظار",
+    "verified_cases": "حالات تم التحقق",
+    "approved_cases": "حالات معتمدة",
+    "rejected_cases": "حالات مرفوضة",
+    "total_users": "إجمالي المستخدمين",
+    "total_patients": "المرضى",
+    "total_volunteers": "المتطوعون",
+    "total_admins": "المدراء"
+  }
+}

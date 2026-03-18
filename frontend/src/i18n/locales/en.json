@@ -1,0 +1,111 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "no_results": "No results found",
+    "success": "Success",
+    "error": "An error occurred",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot password?",
+    "remember_me": "Remember me",
+    "dont_have_account": "Don't have an account?",
+    "already_have_account": "Already have an account?",
+    "name": "Name",
+    "phone": "Phone",
+    "country": "Country",
+    "role": "Role",
+    "login_title": "Welcome back",
+    "register_title": "Create new account"
+  },
+  "roles": {
+    "admin": "Admin",
+    "volunteer": "Volunteer",
+    "patient": "Patient"
+  },
+  "case": {
+    "title": "Medical Cases",
+    "submit": "Submit Case",
+    "my_cases": "My Cases",
+    "patient_name": "Patient Name",
+    "patient_age": "Patient Age",
+    "patient_gender": "Patient Gender",
+    "disease": "Disease Name",
+    "disease_category": "Disease Category",
+    "hospital_name": "Hospital Name",
+    "hospital_country": "Hospital Country",
+    "hospital_address": "Hospital Address",
+    "estimated_cost": "Estimated Cost",
+    "description": "Description",
+    "status": "Status",
+    "priority": "Priority",
+    "documents": "Documents",
+    "upload_document": "Upload Document",
+    "consent": "I agree to publish my data",
+    "consent_text": "I agree to publish my medical case on the humanitarian platform",
+    "statuses": {
+      "pending": "Pending",
+      "verifying": "Verifying",
+      "verified": "Verified",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "priorities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "genders": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Other"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome",
+    "statistics": "Statistics",
+    "recent_cases": "Recent Cases",
+    "pending_cases": "Pending Cases",
+    "verified_cases": "Verified Cases",
+    "approved_cases": "Approved Cases"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "cases": "Cases",
+    "contact": "Contact",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "footer": {
+    "description": "Amal for Treatment is a humanitarian platform helping Yemenis access treatment abroad",
+    "rights": "All rights reserved"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email_invalid": "Invalid email address",
+    "password_min": "Password must be at least 8 characters",
+    "password_match": "Passwords do not match"
+  }
+}

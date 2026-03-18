@@ -1,0 +1,11 @@
+{
+  "name": "yemen-donation-backend",
+  "description": "Yemen Donation Backend API",
+  "version": "1.0.0",
+  "framework": "Laravel",
+  "default_namespace": "App\\",
+  "api_prefix": "api",
+  "models": [],
+  "controllers": [],
+  "migrations": []
+}
