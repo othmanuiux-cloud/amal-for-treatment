@@ -23,9 +23,17 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 COPY composer.json composer.lock* ./
 
-RUN composer install --optimize-autoloader --no-dev --ignore-platform-reqs --no-interaction
+RUN COMPOSER_MEMORY_LIMIT=-1 composer install \
+    --optimize-autoloader \
+    --no-dev \
+    --no-interaction \
+    --no-progress \
+    --ignore-platform-reqs \
+    --no-scripts
 
 COPY . .
+
+RUN php artisan package:discover --ansi || true
 
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage \
@@ -33,7 +41,7 @@ RUN chown -R www-data:www-data /var/www/html \
 
 RUN php artisan config:cache \
     && php artisan route:cache \
-    && php artisan view:cache
+    && php artisan view:cache || true
 
 EXPOSE 80
 
