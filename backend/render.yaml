@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: amal-for-treatment
+    env: php
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      
+      # ✅ 1. مسح الكاش القديم لضمان قراءة المتغيرات الجديدة
+      php artisan config:clear
+      php artisan cache:clear
+      php artisan view:clear
+      
+      # ✅ 2. إنشاء مجلدات مؤقتة قابلة للكتابة (كإجراء احتياطي)
+      mkdir -p /tmp/logs /tmp/storage/framework/{sessions,cache,views}
+      chmod -R 775 /tmp/logs /tmp/storage
+      
+      # ✅ 3. إعادة بناء الكاش
+      php artisan config:cache
+      php artisan route:cache
+      
+    startCommand: |
+      # ✅ 4. إجبار PHP على استخدام IPv4 لحل مشكلة "Network unreachable"
+      export PHP_CLI_SERVER_WORKERS=4
+      php -d curl.ipresolve=4 artisan serve --host=0.0.0.0 --port=$PORT
