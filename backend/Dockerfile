@@ -48,6 +48,8 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage \
     && chmod -R 755 /var/www/html/bootstrap/cache
 
+RUN php artisan migrate --force || true
+
 RUN php artisan config:cache \
     && php artisan route:cache \
     && php artisan view:cache || true
